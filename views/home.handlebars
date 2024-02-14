@@ -1,0 +1,23 @@
+<div class="container">
+    <h1>Chat de coderhouse</h1>
+    <div id="caja" class="caja">
+
+    </div>
+    <form onSubmit="return addMessage()">
+        <div class="mb-3">
+
+            <input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Tu nombre....">
+
+        </div>
+        <div class="mb-3">
+
+            <textarea class="form-control" id="text" placeholder="Tu mensaje...">
+            </textarea>
+        </div>
+
+        <input type="submit" class="btn btn-primary" value="Enviar">
+    </form>
+</div>
+
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/index.js"></script>
